@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Portfolio</title>
+	</head>
+	<body>
+
+			<div class="filter">
+				<input type="text" name="" value="" placeholder="Filter by Painting Name OR Painting Type" ng-model="myFilter">
+			</div>
+			<!-- //.filter -->
+			<ul class="items">
+				<li ng-repeat="painting in paintings | filter:myFilter | orderBy: 'name'" >
+					<div class="item" id="painting_{{ painting.id }}">
+						<div class="image" id='{{ painting.id }}' >
+							<!-- <ul class="user_review"><li> 101 Likes</li> <li> 50 Discuss</li></ul> -->
+							<img ng-src='{{ painting.image  }}' alt='{{ painting.name }}' ng-click="toggleInfo(painting)"   data-toggle="modal" data-target="#myModal"/>
+						</div>
+						<div class="author clearfix">
+							<!-- <img ng-src='{{ painting.artist_image  }}'  alt="profile" class="profile" /> -->
+							<h1 class="title"> {{ painting.name }} <span> {{ painting.type  }}  |  {{ painting.size  }} </span></h1>
+						</div>
+						<div class="description"><p>{{ painting.description  }}</p></div>
+					</div>
+				</li>
+			</ul>
+			<!-- Modal -->
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			        <h4 class="modal-title" id="myModalLabel">{{ selectedPainting.name }}</h4>
+			      </div>
+			      <div class="modal-body">
+						<div class="item">
+							<div class="image" id='{{ selectedPainting.id }}' >
+								<img ng-src='{{ selectedPainting.image  }}' alt='{{ selectedPainting.name }}' />
+							</div>
+							<div class="author clearfix">
+								<!-- <img ng-src='{{ selectedPainting.artist_image  }}'  alt="profile" class="profile" /> -->
+								<h1 class="title"> {{ selectedPainting.name | uppercase }} <span> {{ selectedPainting.type  }}  | {{ selectedPainting.size  }}</span></h1>
+							</div>
+							<div class="description"><p>{{ selectedPainting.description  }}</p></div>
+						</div>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>		
+	</body>
+</html>

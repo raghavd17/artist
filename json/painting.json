@@ -1,0 +1,81 @@
+{"painting" :[
+    {
+    "id": 0,
+    "artist_name": "Ganapathi Hedge",
+    "artist_number": "9845057300",
+    "artist_details": "A good vegetable platter is a staple of any finger-food based buffet,"
+    },
+    {
+    "id": 1,
+    "name": "Folk Acrylic",
+    "type": "Canvas",
+    "image": "img/paintings/Folk_Acrylic-on_Canvas_20x30.jpg",
+    "artist_image":"img/user1.jpg ",
+    "size":"20 x 30",
+    "description":"A good vegetable platter is a staple of any finger-food based buffet, but how often do you hit a graduation party or a concert reception only to find the same old stale, sorry-looking, dried-out carrot sticks, celery sticks, cucumbers, and if you're lucky, bell pepper strips all sitting listlessly around a tub of store-bought Ranch dressing?"
+    },
+    {
+    "id": 2,
+    "name": "Woman 3 1 Acrylic",
+    "type": "Canvas",
+    "image": "img/paintings/Woman_3_1_Acrylic-on_Canvas_20x18.jpg",
+    "artist_image":"img/user2.jpg ",
+    "size":"20 x 18",
+    "description":"A good vegetable platter is a staple of any finger-food based buffet, but how often do you hit a graduation party or a concert reception only to find the same old stale, sorry-looking, dried-out carrot sticks, celery sticks, cucumbers, and if you're lucky, bell pepper strips all sitting listlessly around a tub of store-bought Ranch dressing?"
+    },
+    {
+    "id": 3,
+    "name": "Ganesh 1 Acrylic",
+    "type": "Acrylic",
+    "image": "img/paintings/Ganesh_1_Acrylic-on_Paper_12x18.jpg",
+    "artist_image":"img/user1.jpg ",
+    "size":"12 x 18",
+    "description":"A good vegetable platter is a staple of any finger-food based buffet, but how often do you hit a graduation party or a concert reception only to find the same old stale, sorry-looking, dried-out carrot sticks, celery sticks, cucumbers, and if you're lucky, bell pepper strips all sitting listlessly around a tub of store-bought Ranch dressing?"
+    },
+    {
+    "id": 4,
+    "name": "Ganesh 2 Acrylic",
+    "type": "Acrylic",
+    "image": "img/paintings/Ganesh_2_Acrylic-on_Paper_12x18.jpg",
+    "artist_image":"img/user1.jpg ",
+    "size":"12 x 18",
+    "description":"A good vegetable platter is a staple of any finger-food based buffet, but how often do you hit a graduation party or a concert reception only to find the same old stale, sorry-looking, dried-out carrot sticks, celery sticks, cucumbers, and if you're lucky, bell pepper strips all sitting listlessly around a tub of store-bought Ranch dressing?"
+    },
+    {
+    "id": 5,
+    "name": "Ganesh 5 Acrylic",
+    "type": "Acrylic",
+    "image": "img/paintings/Ganesh_5_Acrylic-on_Paper_12x18.jpg",
+    "artist_image":"img/user1.jpg ",
+    "size":"12 x 18",
+    "description":"A good vegetable platter is a staple of any finger-food based buffet, but how often do you hit a graduation party or a concert reception only to find the same old stale, sorry-looking, dried-out carrot sticks, celery sticks, cucumbers, and if you're lucky, bell pepper strips all sitting listlessly around a tub of store-bought Ranch dressing?"
+    },
+    {
+    "id": 2,
+    "name": "Ganesh 6 Acrylic-on_Paper",
+    "type": "Canvas",
+    "image": "img/paintings/Ganesh_6_Acrylic-on_Paper_SOLD_12x18.jpg",
+    "artist_image":"img/user2.jpg ",
+    "size":"20 x 18",
+    "description":"A good vegetable platter is a staple of any finger-food based buffet, but how often do you hit a graduation party or a concert reception only to find the same old stale, sorry-looking, dried-out carrot sticks, celery sticks, cucumbers, and if you're lucky, bell pepper strips all sitting listlessly around a tub of store-bought Ranch dressing?"
+    },
+    {
+    "id": 3,
+    "name": "Ganesh 1 Acrylic",
+    "type": "Canvas",
+    "image": "img/paintings/Ganesh_1_Acrylic-on_Paper_12x18.jpg",
+    "artist_image":"img/user1.jpg ",
+    "size":"12 x 18",
+    "description":"A good vegetable platter is a staple of any finger-food based buffet, but how often do you hit a graduation party or a concert reception only to find the same old stale, sorry-looking, dried-out carrot sticks, celery sticks, cucumbers, and if you're lucky, bell pepper strips all sitting listlessly around a tub of store-bought Ranch dressing?"
+    },
+    {
+    "id": 4,
+    "name": "Ganesh 2 Acrylic",
+    "type": "Canvas",
+    "image": "img/paintings/Ganesh_2_Acrylic-on_Paper_12x18.jpg",
+    "artist_image":"img/user1.jpg ",
+    "size":"12 x 18",
+    "description":"A good vegetable platter is a staple of any finger-food based buffet, but how often do you hit a graduation party or a concert reception only to find the same old stale, sorry-looking, dried-out carrot sticks, celery sticks, cucumbers, and if you're lucky, bell pepper strips all sitting listlessly around a tub of store-bought Ranch dressing?"
+    }
+
+] }
