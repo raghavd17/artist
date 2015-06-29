@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Angulagar JS Hello World</title>
+		<title>Ganapathi Hegde :: Artist, Painter, Designer</title>
+		<meta name="description" content="An Artist from BFA">
+		<meta name="author" content="Ganapathi Hegde">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-		
-		<link rel="stylesheet" type="text/css" href="css/colorbox.css">
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!--[if lt IE 9]>
@@ -13,37 +14,31 @@
 		<![endif]-->
 	</head>
 	<body ng-app="myApp">
-	  	<nav class="navbar container">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Ganapathi H</a>
-        </div>
-
-        <div class="navbar-collapse collapse" id="navbar-collapse">
-        	<ul class="nav navbar-nav navbar-right">
-	            <li class="active"><a href="#/">Portfolio</a></li>
-	            <li><a href="#about">About</a></li>
-	            <li><a href="#">Contact</a></li>
-	        </ul>
-        </div><!-- //.navbar-collapse -->
-      </div>
-    </nav>
-    <!-- //.navbar end  -->
-
-		<div class="container" id="main_container"  ng-controller="PaintingsCtrl">
-
-
-	
-			<div ng-view></div>
-				
-		</div>
-			      
+		<nav class="navbar container">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">Ganapathi H</a>
+				</div>
+				<div class="navbar-collapse collapse" id="navbar-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#/">Portfolio</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+					</div><!-- //.navbar-collapse -->
+				</div>
+			</nav>
+			<!-- //.navbar end  -->
+			<div class="container" id="main_container"  ng-controller="PaintingsCtrl">
+				<div ng-view></div>
+			</div>
+			
 			<footer>
 				<div class="container">
 					<p>All Content &copy; Ganapathi Hegde. {{date | date:'yyyy'}} | ganapathihegde@gmail.com | 9845057300</p>
@@ -54,82 +49,9 @@
 		
 		<!--  <script src="js/jquery.colorbox-min.js"></script> -->
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
-		    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular-route.min.js"></script>
-
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular-route.min.js"></script>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-		<script>
-
-
-
-
- 
- 
-
-
-
-
-		var app = angular.module('myApp', []);	
-
-
-
-			//Define Routing for app
-			//Uri /portfolio -> template add_order.html and Controller PaintingsCtrl
-			//Uri /about -> template about.html and Controller ShowAboutController
-			app.config(['$routeProvider',
-			  function($routeProvider) {
-			    $routeProvider.
-			      when('/', {
-			        templateUrl: 'portfolio.html',
-			        controller: 'PaintingsCtrl'
-			    }).
-			      when('/about', {
-			        templateUrl: 'about.html',
-			        controller: 'ShowAboutController'
-			      }).
-			      otherwise({
-			        redirectTo: '/'
-			      });
-			}]);
-
-    // create the controller and inject Angular's $scope
- 
-	app.controller('PaintingsCtrl', function($scope,  $http) {
-		$http.get("json/painting.json")
-		.success(function(response) {$scope.paintings = response.painting;});
-
-		$scope.toggleInfo = function(selectedPainting){
-			//console.log('food object: ', selectedFood);
-			// alert('hellooo');
-			var positionLft = $('.product_info').width();
-
-			// console.log($scope.showInfo, 'test');
-			$scope.selectedPainting = selectedPainting;
-		};
-
-		$scope.date = new Date();
-
-		});
-
- 
- 
-		app.controller('ShowAboutController', function($scope, $http) {
-		 
-			$http.get("json/painting.json")
-			.success(function(response) {$scope.paintings = response.painting;});
-		    // $scope.message = 'This is Show orders screen';
-		 
-		});
-
-
-
-
-		
-
-
-  
-
-
-		</script>
+		<script src="js/app.js"></script>
 	</body>
 </html>
