@@ -14,7 +14,11 @@ var app = angular.module('myApp', []);
 			    }).
 			      when('/about', {
 			        templateUrl: 'about.html',
-			        controller: 'ShowAboutController'
+			        controller: 'AboutController'
+			      }).
+			      when('/contact', {
+			        templateUrl: 'contact.html',
+			        controller: 'ContactController'
 			      }).
 			      otherwise({
 			        redirectTo: '/'
@@ -31,27 +35,21 @@ var app = angular.module('myApp', []);
 			//console.log('food object: ', selectedFood);
 			// alert('hellooo');
 			var positionLft = $('.product_info').width();
-
 			// console.log($scope.showInfo, 'test');
 			$scope.selectedPainting = selectedPainting;
 		};
+	});
 
-		$scope.date = new Date();
+	app.controller('AboutController', function($scope) { });
 
-		});
+	app.controller('ContactController', function($scope) {
+	    // $scope.message = 'This is Show orders screen';
+	});
 
- 		app.controller('ShowAboutController', function($scope, $http) {
-		 
-			$http.get("json/painting.json")
-			.success(function(response) {$scope.paintings = response.painting;});
-		    // $scope.message = 'This is Show orders screen';
-		 
-		});
+	app.controller('footerController', function($scope) {
+	 	$scope.date = new Date();
+	});
 
-		app.controller('ShowContactController', function($scope, $http) {
-		 
-			$http.get("json/painting.json")
-			.success(function(response) {$scope.paintings = response.painting;});
-		    // $scope.message = 'This is Show orders screen';
-		 
-		});
+		
+
+

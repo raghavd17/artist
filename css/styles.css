@@ -20,6 +20,7 @@ body
 {
 	position: relative;
 	overflow: hidden;
+	min-height: 550px;
 }
 .navbar { border-bottom: 1px solid #ccc;}
 .navbar-brand { color: #D9812B;  padding: 14px; color: #D9812B; font-size: 22px; height: inherit; }
@@ -59,10 +60,14 @@ ul.items li > div.item .author .profile { border-radius: 100%; float: right;}
 .modal-body .image .overlay h1 { font-size: 24px; margin-bottom: 10px; margin-top: 0;}
 .modal-body .item img { width: 100%; max-width: 100%;}
 
-.about h1 { font-size: 28px; color: #D9812B; font-weight: normal;}
-.about h1  > small { font-size: 14px; display: block;}
+.main_container h1 { font-size: 28px; color: #D9812B; font-weight: normal;}
+.main_container h1  > small { font-size: 14px; display: block;}
 
-.about p { font-size: 14px; line-height: 150%; }
+.main_container p { font-size: 14px; line-height: 150%; }
+.profile ul.contact { margin-top: 15px;}
+.profile ul.contact li { font-size: 20px; line-height: 170%;}
+.profile ul.contact li a, .profile ul.contact li span  { color:#D9812B }
+.profile ul.contact li a:hover { color: inherit;}
 footer > .container { color: #666;  text-align: center; padding: 10px; clear: both; overflow: hidden;}
 footer p { margin: 0px;}
 
@@ -81,9 +86,9 @@ footer p { margin: 0px;}
 	.modal-body .image .overlay h1 { font-size: 32px; margin-bottom: 20px; }
 	ul.items li > div.item .author h1 > span, .modal-body .image .overlay h1 > span { font-size: 18px}
 
-	.about h1 { font-size: 42px; margin-bottom: 30px; }
-.about h1  > small { font-size: 20px; display: inline;}
-.about p { font-size: 24px;  margin-bottom: 25px;}
+.main_container h1 { font-size: 42px; margin-bottom: 30px; }
+.main_container h1  > small { font-size: 20px; display: inline;}
+.main_container p { font-size: 24px;  margin-bottom: 25px;}
 
 }
 
