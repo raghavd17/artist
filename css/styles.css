@@ -12,7 +12,12 @@ html {
 body
 {
 	color: #666;
-	font-family: fantasy;
+	/*font-family: fantasy;*/
+	/*font-family: 'Marck Script', cursive;*/
+	/*font-family: 'Karla', sans-serif;*/
+	font-family: 'Handlee', cursive;
+
+
 }
 
 
@@ -55,7 +60,7 @@ ul.items li > div.item .author .profile { border-radius: 100%; float: right;}
 
 
 .modal-body .image { position: relative;}
-.modal-body .image .overlay { padding:15px 20px;  background: rgba(0,0,0,0.5); position: absolute; bottom: 0;}
+.modal-body .image .overlay { padding:15px 20px;  background: rgba(0,0,0,0.5); position: absolute; bottom: 0; width: 100%;}
 .modal-body .image .overlay * { color: rgba(255,255,255,10) !important;}
 .modal-body .image .overlay h1 { font-size: 24px; margin-bottom: 10px; margin-top: 0;}
 .modal-body .item img { width: 100%; max-width: 100%;}

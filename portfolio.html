@@ -6,11 +6,18 @@
 	<body ng-controller="PaintingsCtrl">
 
 			<div class="filter">
-				<input type="text" name="" value="" placeholder="Filter by Painting Name OR Painting Type" ng-model="myFilter">
+				<!-- <input type="text" name="" value="" placeholder="Filter by Painting Name OR Painting Type" ng-model="myFilter"> -->
+				
+				<ul class="filters">
+				<li >
+					<a ng-click="filters.Canvas"> Canvas </a>
+					<a ng-click="filters.Acrylic"> Acrylic </a>
+				</li>
+				</ul>
 			</div>
 			<!-- //.filter -->
 			<ul class="items">
-				<li ng-repeat="painting in paintings | filter:myFilter | orderBy: 'name'" class="fadeInDown" >
+				<li ng-repeat="painting in paintings | filter:filters | orderBy: 'name'" class="fadeInDown" >
 					<div class="item" id="painting_{{ painting.id }}">
 						<div class="image" id='{{ painting.id }}' >
 							<img ng-src='{{ painting.image  }}' alt='{{ painting.name }}' ng-click="toggleInfo(painting)" data-toggle="modal" data-target="#myModal"/>
