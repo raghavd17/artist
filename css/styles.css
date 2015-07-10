@@ -54,6 +54,6 @@ footer p { margin: 0px; }
 	.main_container h1  > small { font-size: 20px; display: inline; }
 	.main_container p { font-size: 24px; margin-bottom: 25px; }
 }
-@media only screen and (min-width:1200px) {
-	ul.items > li { width: 24.7% }
+@media only screen and (min-width : 1200px)  {
+	ul.items > li  { width: 24.7% }
 }

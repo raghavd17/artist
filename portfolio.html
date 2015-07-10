@@ -8,11 +8,13 @@
 			<div class="filter">
 				<!-- <input type="text" name="" value="" placeholder="Filter by Painting Name OR Painting Type" ng-model="myFilter"> -->
 				
-				<ul class="filters">
-				<li >
-					<a ng-click="filters.Canvas"> Canvas </a>
-					<a ng-click="filters.Acrylic"> Acrylic </a>
-				</li>
+				<ul class="nav nav-pills">
+					<li >
+						<a ng-click="filters = {type: 'Canvas'}" ng-class="{ active: ('Canvas')}"> Canvas </a>
+					</li>
+					<li>
+						<a ng-click="filters = {type: 'Acrylic'}" ng-class="{ active: ('Acrylic')}"> Acrylic </a>
+					</li>
 				</ul>
 			</div>
 			<!-- //.filter -->
@@ -24,7 +26,7 @@
 						</div>
 						<div class="author clearfix">
 							<!-- <img ng-src='{{ painting.artist_image  }}'  alt="profile" class="profile" /> -->
-							<h1 class="title"> {{ painting.name | uppercase }} <span> {{ painting.type  }}  |  {{ painting.size  }} </span></h1>
+							<h1 class="title"> {{ painting.name | uppercase }} <span> {{ painting.type  }}  <br /> Size: {{ painting.size  }} </span></h1>
 						</div>
 					</div>
 				</li>
@@ -35,7 +37,6 @@
 			    <div class="modal-content">
 			      <div class="modal-header">
 			      	<span class="close" data-dismiss="modal" aria-label="Close" aria-hidden="true"> Close</span>
-			        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> -->
 			        <h4 class="modal-title" id="myModalLabel">{{ selectedPainting.name }}</h4>
 			      </div>
 			      <div class="modal-body">
