@@ -7,6 +7,7 @@ var app = angular.module('myApp', []);
 			//Uri /about -> template about.html and Controller ShowAboutController
 			app.config(['$routeProvider',
 			  function($routeProvider) {
+			  	$route.html5Mode(true);
 			    $routeProvider.
 			      when('/', {
 			        templateUrl: 'portfolio.html',
