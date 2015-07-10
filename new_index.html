@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ganapathi Hegde :: Artist, Painter, Designer</title>
+		<meta name="description" content="An Artist from BFA">
+		<meta name="author" content="Ganapathi Hegde">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<!-- 		<link rel="stylesheet" type="text/css" href="http://daneden.github.io/animate.css/animate.min.css"> -->
+		<link href='http://fonts.googleapis.com/css?family=Marck+Script|Karla:700,400,400italic,700italic|Handlee' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body ng-app="myApp">
+		<nav class="navbar container">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">Ganapathi H</a>
+				</div>
+				<div class="navbar-collapse collapse " id="navbar-collapse" ng-controller="MainNavController">
+					<ul class="nav navbar-nav navbar-right">
+						<li ng-class="{ active: isActive('/')}"><a href="#/">Portfolio</a></li>
+						<li ng-class="{ active: isActive('/about')}"><a href="#/about">About</a></li>
+						<li ng-class="{ active: isActive('/contact')}"><a href="#/contact">Contact</a></li>
+					</ul>
+					</div><!-- //.navbar-collapse -->
+				</div>
+			</nav>
+			<!-- //.navbar end  -->
+			<div class="container" id="main_container">
+				<div ng-view></div>
+			</div>
+			
+			<footer ng-controller="footerController">
+				<div class="container">
+					<p>All Content &copy; Ganapathi Hegde. {{date | date:'yyyy'}} | ganapathihegde@gmail.com | 9845057300</p>
+				</div>
+			</footer>
+		</div>
+		<!-- //.#main_container-->
+		
+		<!--  <script src="js/jquery.colorbox-min.js"></script> -->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular-route.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script src="js/app.js"></script>
+	</body>
+</html>
