@@ -9,10 +9,12 @@
 				<!-- <input type="text" name="" value="" placeholder="Filter by Painting Name OR Painting Type" ng-model="myFilter"> -->
 				
 				<ul class="filters">
-				<li >
-					<a ng-click="filters.Canvas"> Canvas </a>
-					<a ng-click="filters.Acrylic"> Acrylic </a>
-				</li>
+					<li >
+						<a ng-click="filters = {type: 'Canvas'}"> Canvas </a>
+					</li>
+					<li>
+						<a ng-click="filters = {type: 'Acrylic'}"> Acrylic </a>
+					</li>
 				</ul>
 			</div>
 			<!-- //.filter -->
