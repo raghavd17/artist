@@ -1,106 +1,59 @@
-html {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-*, *:before, *:after {
-  -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
-  box-sizing: inherit;
-  }
+html { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+*, *:before, *:after { -webkit-box-sizing: inherit; -moz-box-sizing: inherit; box-sizing: inherit; }
+body { color: #666;	/*font-family: fantasy;*/	/*font-family: 'Marck Script', cursive;*/
 
-body
-{
-	color: #666;
-	/*font-family: fantasy;*/
-	/*font-family: 'Marck Script', cursive;*/
 	/*font-family: 'Karla', sans-serif;*/
-	font-family: 'Handlee', cursive;
-
-
-}
-
-
-#main_container
-{
-	position: relative;
-	overflow: hidden;
-	min-height: 550px;
-}
-.navbar { border-bottom: 1px solid #ccc;}
-.navbar-brand { color: #D9812B;  padding: 14px; color: #D9812B; font-size: 22px; height: inherit; }
-.nav { margin:6px 0; }
-.nav > li > a { padding:8px; font-size: 22px; color:  rgba(0,0,0,0.8); }
-.nav > li.active > a, .nav > li > a:hover, .nav > li > a:focus, .nav > li > a:active { background: none;  color: #D9812B; }
-
-.navbar-toggle { border-color: #ccc; border-radius: 0px;}
-.navbar-toggle .icon-bar { background: #BC7C9E;}
-ul.items { margin: 0px; padding: 0px; list-style: none; position: relative;
- -webkit-transition-duration: 0.2s;
-    -moz-transition-duration: 0.2s;
-    -o-transition-duration: 0.2s;
-    transition-duration: 0.2s;
-}
-.filter > input { width: 97.5%; padding: 10px; font-size: 20px;  border-radius: 2px;  border:1px solid #ccc; margin: 0px auto; display: block; outline: none;}
-ul.items > li  { overflow: hidden; display: inline-block; width: 100%; /*width: 24.7%; */ vertical-align: top;}
-ul.items li > div.item {  border: 1px solid #e1e1e1; padding: 10px;  margin: 10px;  background: #fff;}
-ul.items li > div.item div.image { position: relative; height: 260px;  overflow: hidden; cursor: pointer;}
-
-ul.items li > div.item div.image img, .product_info div.image img { width: 100%; max-width: 100%;}
-
-
-
-ul.items li > div.item div.image img{ position: relative; top: 0%; transform: translateY(0%);}
-
-ul.items li > div.item .author { margin: 8px 0 0 0;}
-ul.items li > div.item .author h1{  white-space: nowrap;  overflow: hidden;  text-overflow: ellipsis;}
-ul.items li > div.item .author h1, .modal-body .image .overlay h1 { font-size: 16px; font-weight: normal; line-height: normal; color: rgb(28, 28, 28);  margin: 10px 0 0 0;}
-ul.items li > div.item .author h1 > span, .modal-body .image .overlay h1 > span { display: block; color: #54543F; font-style: italic; font-size: 12px; margin-top: 5px;}
-ul.items li > div.item .author .profile { border-radius: 100%; float: right;}
-
-
-.modal-body .image { position: relative;}
-.modal-body .image .overlay { padding:15px 20px;  background: rgba(0,0,0,0.5); position: absolute; bottom: 0; width: 100%;}
-.modal-body .image .overlay * { color: rgba(255,255,255,10) !important;}
-.modal-body .image .overlay h1 { font-size: 24px; margin-bottom: 10px; margin-top: 0;}
-.modal-body .item img { width: 100%; max-width: 100%;}
-
-.main_container h1 { font-size: 28px; color: #D9812B; font-weight: normal;}
-.main_container h1  > small { font-size: 14px; display: block;}
-
+font-family: 'Handlee', cursive; }
+#main_container { position: relative; overflow: hidden; min-height: 550px; }
+.navbar { border-bottom: 1px solid #ccc; }
+.navbar-brand { color: #D9812B; padding: 14px; color: #D9812B; font-size: 22px; height: inherit; }
+.nav { margin: 6px 0; }
+.nav > li > a { padding: 8px; font-size: 22px; color: rgba(0, 0, 0, 0.8); }
+.nav > li.active > a, .nav > li > a:hover, .nav > li > a:focus, .nav > li > a:active { background: none; color: #D9812B; }
+.navbar-toggle { border-color: #ccc; border-radius: 0px; }
+.navbar-toggle .icon-bar { background: #BC7C9E; }
+ul.items { margin: 0px; padding: 0px; list-style: none; position: relative; -webkit-transition-duration: 0.2s; -moz-transition-duration: 0.2s; -o-transition-duration: 0.2s; transition-duration: 0.2s; }
+.filter > input { width: 97.5%; padding: 10px; font-size: 20px; border-radius: 2px; border: 1px solid #ccc; margin: 0px auto; display: block; outline: none; }
+ul.items > li { overflow: hidden; display: inline-block; width: 100%; /*width: 24.7%; */ vertical-align: top; }
+ul.items li > div.item { border: 1px solid #e1e1e1; padding: 10px; margin: 10px; background: #fff; }
+ul.items li > div.item div.image { position: relative; height: 260px; overflow: hidden; cursor: pointer; }
+ul.items li > div.item div.image img, .product_info div.image img { width: 100%; max-width: 100%; }
+ul.items li > div.item div.image img { position: relative; top: 0%; transform: translateY(0%); }
+ul.items li > div.item .author { margin: 8px 0 0 0; }
+ul.items li > div.item .author h1 { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+ul.items li > div.item .author h1, .modal-body .image .overlay h1 { font-size: 16px; font-weight: normal; line-height: normal; color: rgb(28, 28, 28); margin: 10px 0 0 0; }
+ul.items li > div.item .author h1 > span, .modal-body .image .overlay h1 > span { display: block; color: #54543F; font-style: italic; font-size: 12px; margin-top: 5px; }
+ul.items li > div.item .author .profile { border-radius: 100%; float: right; }
+.modal-body .image { position: relative; }
+.modal-body .image .overlay { padding: 15px 20px; background: rgba(0, 0, 0, 0.5); position: absolute; bottom: 0; width: 100%; }
+.modal-body .image .overlay * { color: rgba(255, 255, 255, 10) !important; }
+.modal-body .image .overlay h1 { font-size: 24px; margin-bottom: 10px; margin-top: 0; }
+.modal-body .item img { width: 100%; max-width: 100%; }
+.main_container h1 { font-size: 28px; color: #D9812B; font-weight: normal; }
+.main_container h1  > small { font-size: 14px; display: block; }
 .main_container p { font-size: 14px; line-height: 150%; }
-.profile ul.contact { margin-top: 15px;}
-.profile ul.contact li { font-size: 20px; line-height: 170%;}
-.profile ul.contact li a, .profile ul.contact li span  { color:#D9812B }
-.profile ul.contact li a:hover { color: inherit;}
-footer > .container { color: #666;  text-align: center; padding: 10px; clear: both; overflow: hidden;}
-footer p { margin: 0px;}
-
-
-@media only screen and (min-width : 460px) {
-	ul.items > li  { width: 50%; }
+.profile ul.contact { margin-top: 15px; }
+.profile ul.contact li { font-size: 20px; line-height: 170%; }
+.profile ul.contact li a, .profile ul.contact li span { color: #D9812B }
+.profile ul.contact li a:hover { color: inherit; }
+footer > .container { color: #666; text-align: center; padding: 10px; clear: both; overflow: hidden; }
+footer p { margin: 0px; }
+@media only screen and (min-width:460px) {
+	ul.items > li { width: 50%; }
 }
-@media only screen and (min-width : 979px) {
-	ul.items > li  { width: 33.2%; }
-	.nav > li > a { padding:8px; font-size: 32px;}
-	.navbar-brand {  padding: 28px; font-size: 42px; }
-	.filter { margin-bottom: 10px;}
-	.filter > input { width: 80%; font-size: 28px;}
-	.nav { margin:20px 0; }
-
+@media only screen and (min-width:979px) {
+	ul.items > li { width: 33.2%; }
+	.nav > li > a { padding: 8px; font-size: 32px; }
+	.navbar-brand { padding: 28px; font-size: 42px; }
+	.filter { margin-bottom: 10px; }
+	.filter > input { width: 80%; font-size: 28px; }
+	.nav { margin: 20px 0; }
 	.modal-body .image .overlay h1 { font-size: 32px; margin-bottom: 20px; }
-	ul.items li > div.item .author h1 > span, .modal-body .image .overlay h1 > span { font-size: 18px}
-
-.main_container h1 { font-size: 42px; margin-bottom: 30px; }
-.main_container h1  > small { font-size: 20px; display: inline;}
-.main_container p { font-size: 24px;  margin-bottom: 25px;}
-
+	ul.items li > div.item .author h1 > span, .modal-body .image .overlay h1 > span { font-size: 18px }
+	.main_container h1 { font-size: 42px; margin-bottom: 30px; }
+	.main_container h1  > small { font-size: 20px; display: inline; }
+	.main_container p { font-size: 24px; margin-bottom: 25px; }
 }
-
 @media only screen and (min-width : 1200px)  {
 	ul.items > li  { width: 24.7% }
-}
-.filters li{
-	display: inline;
-	padding-right: 10px;
 }
