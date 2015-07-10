@@ -1,0 +1,27 @@
+{"work" :[
+    {
+    "id": 1,
+    "name": "Name of the website",
+    "type": "Canvas",
+    "image": "img/website/home_page.jpg",
+    "size":"12 x 18",
+    "description":"Short description about the painting"
+    },
+    {
+    "id": 2,
+    "name": "Name of the logo",
+    "type": "Canvas",
+    "image": "img/work/logo.jpg",
+    "size":"12 x 18",
+    "description":"Short description about the painting"
+    },
+    {
+    "id": 2,
+    "name": "Name of the digital art",
+    "type": "Canvas",
+    "image": "img/works/digital/art.jpg",
+    "size":"12 x 18",
+    "description":"Short description about the painting"
+    }
+
+] }
