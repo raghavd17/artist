@@ -100,3 +100,7 @@ footer p { margin: 0px;}
 @media only screen and (min-width : 1200px)  {
 	ul.items > li  { width: 24.7% }
 }
+.filters li{
+	display: inline;
+	padding-right: 10px;
+}
