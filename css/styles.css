@@ -104,3 +104,4 @@ footer p { margin: 0px;}
 	display: inline;
 	padding-right: 10px;
 }
+.filters li.active { color: red;}
